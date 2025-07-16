@@ -4,6 +4,7 @@ import { Header } from '../components/header.jsx';
 export function OrdersPage() {
   return (
     <>
+      <link rel="icon" type="image/png" href="orders-favicon.png" />
       <title>Orders</title>
       
       <Header />
