@@ -26,8 +26,9 @@ function App() {
       <Route path='/checkout' element={<CheckoutPage cart={cart} />}>
       </Route>
       <Route path="/orders" element={<OrdersPage cart={cart} />}></Route>
-      <Route path="/tracking" element={<TrackingPage />}></Route>
-      <Route path='*' element={<NotFound />}></Route>
+      <Route path="/tracking/:orderId/:productId" element={<TrackingPage cart={cart} />} />
+
+      <Route path='*' element={<NotFound cart={cart} />}></Route>
     </Routes>
   );
 }
